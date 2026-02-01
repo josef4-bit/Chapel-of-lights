@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lights in the World Outreach Ministry</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Welcome Screen -->
+  <section id="welcomeScreen" class="screen">
+    <header class="welcome-header">
+      <div class="logo-container">
+        <img src="logo.png" alt="Church Logo" class="church-logo" width="100%">
+      </div>
+      <h1>Welcome to Lights in the World Outreach Ministry</h1>
+      <p class="welcome-subtitle">Explore today’s service and receive your prophetic word for the month.</p>
+    </header>
+    <div class="welcome-options">
+      <button class="btn primary-btn" id="todayServiceBtn">Today’s Service</button>
+      <button class="btn secondary-btn" id="churchMessagesBtn">Church Messages</button>
+    </div>
+  </section>
+
+  <!-- Service Screen -->
+  <section id="serviceScreen" class="screen hidden">
+    <header class="service-header">
+      <h2>Prophetic / Miracle Basket Service</h2>
+      <p class="service-subtitle">Pick your prophetic word(s) for the month</p>
+    </header>
+
+    <main class="service-main">
+      <div class="word-box">
+        <div class="word-display" id="propheticWord">Tap the button below to receive your word.</div>
+        <div class="word-controls">
+          <label for="wordCount">Number of Words:</label>
+          <select id="wordCount">
+            <option value="1">1 Word</option>
+            <option value="2">2 Words</option>
+            <option value="3">3 Words</option>
+            <option value="4">4 Words</option>
+          </select>
+          <button class="btn primary-btn" id="getWordBtn">Get Word(s)</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="service-footer">
+      Theme of the Month: <strong>MY GOD WILL GIVE ME GRACE AND GLORY</strong>
+    </footer>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
